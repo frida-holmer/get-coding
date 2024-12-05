@@ -52,9 +52,9 @@ header {
 }
 
 nav {
-  width: 95%;
+  width: 97%;
   margin: auto;
-  padding-top: 3em;
+  padding-top: 2em;
 }
 
 .flex-nav {
@@ -62,14 +62,12 @@ nav {
   flex-direction: row;
   justify-content: center;
   background-color: rgb(248, 248, 248);
-  border: 0.1em solid rgb(242, 242, 242);
+  border: 0.08em solid rgb(242, 242, 242);
   box-shadow: 0.1em 0.1em 2em rgb(220, 220, 220);
-  padding: 0.5em;
-  
 }
 
 .flex-nav > li {
-  padding: 1em;
+  padding: 0.45em 1.3em;
 }
 
 /* Main */
@@ -79,14 +77,14 @@ main {
 }
 
 section {
-  padding: 20em 0;
+  padding: 10em 0;
 }
 
 button {
   font-size: 1.88rem;
   color: #fff;
-  margin-top: 1em;
-  padding: 0.5em 1em;
+  margin-top: 1.3em;
+  padding: 0.4em 1.2em;
   background-color: rgb(91, 46, 72);
   box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.25);
   border-radius: 0.4em;
@@ -97,9 +95,9 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 2em;
+  padding: 1.3em 2em;
 }
 
 .flex-footer > li {
-  padding: 1em;
+  padding: 0 0.5em;
 }
