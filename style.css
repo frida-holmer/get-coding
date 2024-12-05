@@ -1,14 +1,12 @@
-/* makes sizing simpler */
-
+/* Reset: makes sizing simpler */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* remove default spacing */
-/* force styling of type through styling, rather than elements */
-
+/* Reset: remove default spacing */
+/* Reset: force styling of type through styling, rather than elements */
 * {
   margin: 0;
   padding: 0;
@@ -18,27 +16,43 @@
   list-style-type: none;
 }
 
-/* responsive images/videos */
-img,
-picture,
-svg,
-video {
+/* Reset: responsive images */
+img {
   display: block;
   max-width: 100%;
 }
 
+/* Variables */
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --primary-font-weight-regular: 400;
+  --primary-background-color: rgb(88, 114, 145);
+  --secondary-background-color: rgb(255, 255, 255);
+  --primary-text-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(0, 0, 0);
+  --nav-border-color: rgb(242, 242, 242);
+  --nav-shadow-color: rgb(220, 220, 220);
+  --button-background-color: rgb(91, 46, 72);
+  --button-shadow-color: rgba(0, 0, 0, 0.25);
+}
+
 /* Fonts */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: var(--primary-font-weight-regular);
   line-height: 1.5;
-  color: #fff;
+  color: var(--primary-text-color);
 }
 
 a {
   font-size: 1.5rem;
-  color: #000;
+  color: var(--secondary-text-color);
+}
+
+button {
+  font-size: 1.88rem;
+  color: var(--primary-text-color);
 }
 
 /* Header */
@@ -61,9 +75,9 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(248, 248, 248);
-  border: 0.08em solid rgb(242, 242, 242);
-  box-shadow: 0.1em 0.1em 2em rgb(220, 220, 220);
+  background-color: var(--secondary-background-color);
+  border: 0.08em solid var(--nav-border-color);
+  box-shadow: 0.1em 0.1em 2em var(--nav-shadow-color);
 }
 
 .flex-nav > li {
@@ -72,7 +86,7 @@ nav {
 
 /* Main */
 main {
-  background-color: rgb(88, 114, 145);
+  background-color: var(--primary-background-color);
   text-align: center;
 }
 
@@ -81,12 +95,10 @@ section {
 }
 
 button {
-  font-size: 1.88rem;
-  color: #fff;
   margin-top: 1.3em;
   padding: 0.4em 1.2em;
-  background-color: rgb(91, 46, 72);
-  box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.25);
+  background-color: var(--button-background-color);
+  box-shadow: 0 0.2em 0.2em var(--button-shadow-color);
   border-radius: 0.4em;
 }
 
